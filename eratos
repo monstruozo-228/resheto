@@ -1,0 +1,7 @@
+n=int(input())+1
+a=[True]*n
+a[0]=a[1]=False
+for i in range(2,n+1):
+    if a[i]:
+        for k in range(i**2,n+1,i):
+            a[k]=False
